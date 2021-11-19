@@ -15,9 +15,9 @@ const Cursos = (props) => (
     <Col>
     {props.coursesData.map(course => (
               <Curso
-                title={course.nome}
-                desc={course.descricao} />
-            ))};
+                course={course} 
+              />
+            ))}
     </Col>
   </Row>
 );

@@ -4,6 +4,7 @@ import React from "react";
 import Home from "./components/home/home";
 import Cursos from "./components/cursos/cursos";
 import Adicionar from './components/cursos/adicionar'
+import Editar from './components/cursos/editar'
 
 import { Container } from 'react-materialize';
 // Importanto o component <Switch /> e <Route /> da nossa Lib de rotas
@@ -16,6 +17,7 @@ const Main = (props) => (
         <Route exact path='/' element={<Home/>}/>
         <Route path='/cursos' element={<Cursos coursesData={props.coursesData}/>}/>
         <Route path='/adicionar' element={<Adicionar/>}/>
+        <Route path='/editar/:colecaoId' element={<Editar/>}/>
       </Routes>
     </Container>
   </main>
